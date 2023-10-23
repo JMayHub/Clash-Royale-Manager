@@ -15,7 +15,7 @@ public class Arena implements Serializable
     @SerializedName("name")
     @Expose
     private String name;
-    private final static long serialVersionUID = -104769913425450055L;
+    private final static long serialVersionUID = -7290348992583280551L;
 
     public Integer getId() {
         return id;
@@ -25,22 +25,12 @@ public class Arena implements Serializable
         this.id = id;
     }
 
-    public Arena withId(Integer id) {
-        this.id = id;
-        return this;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Arena withName(String name) {
-        this.name = name;
-        return this;
     }
 
 }
